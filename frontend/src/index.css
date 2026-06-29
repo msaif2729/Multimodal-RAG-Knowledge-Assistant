@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0f;
+  color: #f1f5f9;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 999px;
+}
+
+/* Markdown prose styles */
+.ai-prose h1, .ai-prose h2, .ai-prose h3 {
+  color: #f1f5f9;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.ai-prose h1 { font-size: 1.1rem; }
+.ai-prose h2 { font-size: 1rem; }
+.ai-prose h3 { font-size: 0.95rem; }
+.ai-prose p { margin-bottom: 0.6rem; line-height: 1.7; }
+.ai-prose ul { list-style: disc; padding-left: 1.25rem; margin-bottom: 0.6rem; }
+.ai-prose ol { list-style: decimal; padding-left: 1.25rem; margin-bottom: 0.6rem; }
+.ai-prose li { margin-bottom: 0.25rem; line-height: 1.6; }
+.ai-prose strong { color: #e2e8f0; font-weight: 600; }
+.ai-prose code {
+  background: #1e293b;
+  color: #a78bfa;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+.ai-prose pre {
+  background: #1e293b;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 0.6rem;
+}
+.ai-prose pre code {
+  background: transparent;
+  padding: 0;
+  color: #e2e8f0;
+}
+.ai-prose blockquote {
+  border-left: 3px solid #6366f1;
+  padding-left: 1rem;
+  color: #94a3b8;
+  font-style: italic;
+}
+.ai-prose a { color: #818cf8; text-decoration: underline; }
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
